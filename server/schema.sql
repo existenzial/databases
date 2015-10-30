@@ -3,7 +3,13 @@ CREATE DATABASE chat;
 USE chat;
 
 CREATE TABLE messages (
-  /* Describe your table here.*/
+  ID number(4),
+  userID number(4) /* foreign key */
+);
+
+CREATE TABLE users (
+  userID number(4), /* primary key */
+  userName varchar(20)
 );
 
 /* Create other tables and define schemas for them here! */
