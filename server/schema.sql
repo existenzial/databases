@@ -5,6 +5,7 @@ USE chat;
 CREATE TABLE messages (
   ID int(4),
   userID int(4), /* foreign key */
+  text varchar(160), 
   PRIMARY KEY(ID)/*,*/
   /*FOREIGN KEY(userID)*/
 );
