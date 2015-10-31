@@ -3,7 +3,8 @@ CREATE DATABASE chat;
 USE chat;
 
 CREATE TABLE messages (
-  ID int(4),
+  ID int(4) auto_increment,
+  objectID int(4),
   userID int(4), /* foreign key */
   text varchar(160), 
   PRIMARY KEY(ID)/*,*/
@@ -11,8 +12,8 @@ CREATE TABLE messages (
 );
 
 CREATE TABLE users (
-  userID int(4), /* primary key */
-  userName varchar(20),
+  userID int(4) auto_increment, /* primary key */
+  username varchar(20),
   PRIMARY KEY(userID)
 );
 
