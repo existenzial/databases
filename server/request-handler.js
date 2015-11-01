@@ -12,16 +12,7 @@ var messages = [
   }
   */
 ];
-var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "tga",
-  database: "chat"
-});
 
-connection.connect(function(){
-  console.log("connected!");
-});
 
 var actions = {
   'GET': function(request, response){
